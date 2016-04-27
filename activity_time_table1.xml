@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.timetable.MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.timetable.MainActivity">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context="com.example.timetable.MainActivity">
+
+            <TextView
+                android:background="#ffff66"
+                android:textColor="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:id="@+id/empty"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34"
+                />
+            <TextView
+                android:background="#ffff66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:id="@+id/mon0"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="#ffff66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus"
+                android:id="@+id/tus0"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="#ffff66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/wed0"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="#ffff66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/thu0"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:background="#ffff66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/fri0"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Mon" />
+
+            <TextView
+                android:background="#ffffd700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="건축"
+                android:id="@+id/textView3"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/textView4"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView5"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff00ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SE"
+                android:id="@+id/textView6"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:gravity="center"
+                android:id="@+id/textView7"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:background="#ff00ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모프"
+                android:id="@+id/textView8"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffffd700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="건축"
+                android:id="@+id/textView9"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1.04" />
+
+            <TextView
+                android:background="#ff00ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모프"
+                android:id="@+id/textView10"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1.01" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView11"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff00ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SE"
+                android:id="@+id/textView12"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="0.99" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:gravity="center"
+                android:id="@+id/textView13"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:background="#ff00ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모프"
+                android:id="@+id/textView14"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus"
+                android:id="@+id/textView15"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff00ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모프"
+                android:id="@+id/textView16"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView17"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff00ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SE"
+                android:id="@+id/textView18"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:gravity="center"
+                android:id="@+id/textView19"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:id="@+id/textView20"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffff69b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그래"
+                android:id="@+id/textView21"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/textView22"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView23"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView24"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:gravity="center"
+                android:id="@+id/textView25"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:id="@+id/textView26"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffff69b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="픽스"
+                android:id="@+id/textView27"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/textView28"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView29"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView30"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:gravity="center"
+                android:id="@+id/textView31"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:id="@+id/textView32"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffff69b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그래"
+                android:id="@+id/textView33"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/textView34"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView35"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView36"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:gravity="center"
+                android:id="@+id/textView37"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:background="#cc99ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경영"
+                android:id="@+id/textView38"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffff69b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="픽스"
+                android:id="@+id/textView39"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:id="@+id/textView40"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView41"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView42"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:gravity="center"
+                android:id="@+id/textView43"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:background="#cc99ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경영"
+                android:id="@+id/textView44"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="0.97" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus"
+                android:id="@+id/textView45"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff4169e1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소산"
+                android:id="@+id/textView46"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:id="@+id/textView47"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView48"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17"
+                android:gravity="center"
+                android:id="@+id/textView49"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:background="#cc99ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경영"
+                android:id="@+id/textView50"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1.04" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus"
+                android:id="@+id/textView51"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff4169e1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소산"
+                android:id="@+id/textView52"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="0.99" />
+
+            <TextView
+                android:background="#c1ff1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="졸작"
+                android:id="@+id/textView53"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView54"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            tools:context="com.example.timetable.MainActivity"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:background="#ffadff2f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:gravity="center"
+                android:id="@+id/textView55"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:id="@+id/textView56"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus"
+                android:id="@+id/textView57"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ff4169e1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소산"
+                android:id="@+id/textView58"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#c1ff1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="졸작"
+                android:id="@+id/textView59"
+                android:padding="13dp"
+                android:gravity="center"
+                android:layout_weight="1.02" />
+
+            <TextView
+                android:textColor="#00ff0000"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:id="@+id/textView60"
+                android:padding="13dp"
+                android:layout_toRightOf="@+id/thu"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="show  date"
+            android:id="@+id/bt"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

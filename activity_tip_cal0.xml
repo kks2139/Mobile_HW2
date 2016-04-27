@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.timetable.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hw2.TimeTable0">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile HW"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:background="@drawable/border"
+        android:layout_margin="2dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="2dp"
+        android:padding="27dp"
+        android:textColor="#000000"
+        android:text="     - Tip Calculator -\n\nThis is an amazing program that can you to calculate some tips of your money! It's easy to calculate. Start right now ~!"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run Tip Calculator"
+        android:padding="30dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:id="@+id/tip_bt"
+        />
+
+</LinearLayout>
+</ScrollView>
